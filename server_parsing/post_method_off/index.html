@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h1>POST METHOD OFF</h1>
+		<h2>Upload an image</h2>
+		<form method="post" enctype="multipart/form-data">
+			<label for="image">Choose an image:</label>
+			<input type="file" id="image" name="image">
+			<input type="submit" value="Upload">
+		</form><br/>
+		<h1>post form CGI</h1>
+		<h2>hello form</h2>
+		<form method=post action="cgi-bin/hello.py">
+			<input type="text" name="name">
+			<input type="text" name="addr">
+			<input type=submit value="submit">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Content too large</title>
+        <link rel="icon" href="https://media.tenor.com/lVIuYsJXHzEAAAAd/spongebob-dancing.gif" type="image/gif"/>
+        <style>
+            @keyframes background_animation {
+                0% { background-color: hsl(0, 100%, 50%); background-position: 0 0; }
+                25% { background-color: hsl(90, 100%, 50%) }
+                50% { background-color: hsl(180, 100%, 50%) }
+                75% { background-color: hsl(270, 100%, 50%)}
+                100% { background-color: hsl(360, 100%, 50%); background-position: 1000px 590px }
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            body {
+                animation: background_animation 4s linear infinite;
+				background-image: url("https://www.photofunky.net/output/image/b/0/a/8/b0a8cd/photofunky.gif");
+            }
+
+			h1, h2 {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 10vw;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				color: white;
+				text-shadow: 0 0 10px black;
+			}
+
+			h2 {
+				font-size: 5vw;
+			}
+        </style>
+    </head>
+    <body>
+        <h1>Error 413</h1>
+        <h2>Content too large</h2>
+    </body>
+</html>
