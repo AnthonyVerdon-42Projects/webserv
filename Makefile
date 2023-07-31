@@ -21,12 +21,6 @@ OBJS    := $(addprefix objs/, $(SRCS:.cpp=.o))
 
 all: $(NAME)
 
-run: all
-	./${NAME} conf/real.conf
-
-vg: all
-	valgrind -s --track-fds=yes --show-leak-kinds=all --leak-check=full ./${NAME} conf/easy.conf
-
 $(NAME): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)
 
