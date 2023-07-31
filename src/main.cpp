@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 		if (argc == 2)
 			serverConfigFile = parser.parseConfFile(argv[1]);
 		else
-			serverConfigFile = parser.parseConfFile("conf/real.conf");
+			serverConfigFile = parser.parseConfFile("conf/base.conf");
 	}
 	catch(const std::string exception)
 	{
